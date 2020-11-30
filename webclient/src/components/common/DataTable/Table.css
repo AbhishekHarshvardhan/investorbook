@@ -1,0 +1,27 @@
+.table-header,
+.ui.table thead th {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #797979;
+}
+
+.ui.basic.table {
+  margin-top: 2rem;
+}
+
+.text-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+}
+
+.ui.header > .image:not(.icon),
+.ui.header > img {
+  height: 2.5em;
+  text-align: center;
+}

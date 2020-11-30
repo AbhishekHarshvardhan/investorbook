@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
-import Investors from './Investors'
+import { Route, Switch, Redirect } from 'react-router-dom';
+import Admin from './layouts/Admin';
 
 function App() {
   return (
-    <div className="App">
-      <Investors />
-    </div>
+    <Switch>
+      {/* add routes with layouts */}
+      <Route path='/admin' component={Admin} />
+      {/* add redirect for first page */}
+      <Redirect from='*' to='/admin' />
+    </Switch>
   );
 }
 

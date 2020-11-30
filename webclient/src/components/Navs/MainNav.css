@@ -1,0 +1,33 @@
+.tab-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.ui.menu.tab-menu .item:first-child {
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.prime {
+  border: 1px solid #4970f8 !important;
+}
+
+.ui.basic.button,
+.ui.basic.button:hover {
+  color: #4970f8 !important;
+}
+
+.search.icon {
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .search-input {
+    display: none;
+  }
+}
