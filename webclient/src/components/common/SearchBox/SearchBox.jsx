@@ -18,6 +18,7 @@ const SearchBox = ({ value, onChange }) => {
         className='search-input'
         type='text'
         value={value}
+        placeholder='Search...'
         onChange={(e) => onChange(e.currentTarget.value)}
       />
       <i className='search  icon pointer' />

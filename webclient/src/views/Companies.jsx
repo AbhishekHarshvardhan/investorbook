@@ -27,9 +27,9 @@ const Companies = () => {
     tabMenu: {
       title: 'Companies',
       btn: (
-        <button className='item ui mini basic button prime' onClick={openModal}>
+        <a className='item ui mini basic button prime' onClick={openModal}>
           Add Company
-        </button>
+        </a>
       ),
     },
     table: {

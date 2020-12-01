@@ -31,9 +31,9 @@ const Investors = () => {
     tabMenu: {
       title: 'Investors',
       btn: (
-        <button className='item ui mini basic button prime' onClick={openModal}>
+        <a className='item ui mini basic button prime' onClick={openModal}>
           Add Investor
-        </button>
+        </a>
       ),
     },
     table: {

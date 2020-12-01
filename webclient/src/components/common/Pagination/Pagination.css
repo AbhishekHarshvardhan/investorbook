@@ -21,6 +21,15 @@
   width: 11px;
 }
 
+.paginate select,
+.paginate select:focus {
+  font-size: 12px;
+  line-height: 11px;
+  color: #000000;
+  border: none;
+  outline: none;
+}
+
 @media only screen and (max-width: 768px) {
   .pagination-font {
     display: none;

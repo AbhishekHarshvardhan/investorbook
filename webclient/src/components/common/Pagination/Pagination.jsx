@@ -13,9 +13,10 @@ const Pagination = ({
     <div className='paginate'>
       <span className='pagination-font'>
         Rows per page: &nbsp;{' '}
-        <div className='ui inline dropdown visible active '>
+        <div className='ui inline dropdown visible active'>
           <div className='inline field'>
             <select
+              className='pointer'
               value={pageSize}
               onChange={(e) => onPageSizeChange(e.target.value)}
             >
@@ -35,15 +36,15 @@ const Pagination = ({
         of {itemsCount}
       </span>
       <span className='ml-1'>
-        <button
+        <a
           onClick={() => {
             if ((currentPage - 1) * pageSize > 0) onPageChange(-1);
           }}
           className=' ui circular icon button pagination-item pointer'
         >
           &lt;
-        </button>
-        <button
+        </a>
+        <a
           onClick={() => {
             if (
               (currentPage - 1) * pageSize < itemsCount &&
@@ -54,7 +55,7 @@ const Pagination = ({
           className=' ui circular icon button pagination-item pointer'
         >
           &gt;
-        </button>
+        </a>
       </span>
     </div>
   );
